@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{NAME}} — Idlewild Heritage Trail (Proposed)</title>
+<meta name="description" content="A proposed Idlewild Heritage Trail stop, brought to Detroit by the Black Footwear Forum. {{DESCRIPTION_PLAIN}}">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="trail-header">
+  <img class="logo-wordmark" src="../assets/img/brand/idlewild-wordmark-white.png" alt="Idlewild">
+  <div class="logo-subtitle">Heritage Trail<img class="by-merrell" src="../assets/img/brand/merrell-logo-white.svg" alt="by Merrell"></div>
+  <div class="tagline">This is a proposed heritage trail preserving the stories of the people, places, businesses, and landmarks that shaped Idlewild — told by Idlewilders, in their own voices. The Black Footwear Forum brings it to Detroit as an example of what's to come; the real trail will be in Idlewild and will grow well beyond the 20 stops.</div>
+</header>
+
+<div class="stop-number">Proposed Stop {{NUMBER}} of {{TOTAL}}</div>
+
+<main>
+  <h1 class="stop-title">{{NAME}}</h1>
+  <hr class="accent-rule">
+
+  <div class="listen-block">
+    <div class="listen-content">
+      <div class="listen-text">Listen to the Story</div>
+      {{AUDIO_BLOCK}}
+    </div>
+  </div>
+
+  {{PHOTO_BLOCK}}
+
+  <div class="story-text">
+    <p>{{DESCRIPTION_HTML}}</p>
+  </div>
+
+  <div class="stop-nav">
+    <a class="back-link" href="../index.html">&larr; Back to all stops</a>
+    {{NEXT_LINK}}
+  </div>
+</main>
+
+<footer class="trail-footer">
+  #LOOK AGAIN at #MI BLACK EDEN
+</footer>
+
+<script src="../assets/js/player.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+/* Idlewild Heritage Trail — shared styles
+   Palette pulled from the printed sign design. Swap the CSS variables below
+   once real brand assets (logo file, exact hex codes, sidebar background
+   photo) are available — nothing else needs to change. */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --brown-dark: #373836; /* Slate Gray */
+  --orange: #f4762d; /* Merrell Orange */
+  --cream: #f5f2eb; /* Sandy Dunes */
+  --ink: #373836; /* Slate Gray */
+  --white: #ffffff;
+  --sidebar-width: 260px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.55;
+}
+
+a { color: var(--orange); }
+
+.trail-header {
+  background: var(--brown-dark);
+  color: var(--white);
+  padding: 20px 20px 24px;
+}
+
+.trail-header .logo-wordmark {
+  display: block;
+  width: 200px;
+  max-width: 62%;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.trail-header .logo-subtitle {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.05;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.trail-header .logo-subtitle .by-merrell {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin-top: 4px;
+}
+
+.trail-header .tagline {
+  font-size: 13px;
+  color: #e8d9c8;
+  max-width: 60ch;
+}
+
+.about-preview {
+  background: var(--white);
+  border: 1px solid #e6dccd;
+  border-left: 4px solid var(--orange);
+  border-radius: 10px;
+  padding: 18px 18px 4px;
+  margin: 20px 0 28px;
+}
+
+.about-preview p {
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+
+.stop-number {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--brown-dark);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin: 20px 20px 0;
+  text-transform: uppercase;
+}
+
+main {
+  padding: 12px 20px 60px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1.stop-title {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 1.02;
+  margin: 8px 0 14px;
+  color: var(--ink);
+}
+
+.accent-rule {
+  border: none;
+  border-top: 3px solid var(--orange);
+  width: 64px;
+  margin: 0 0 20px;
+}
+
+.stop-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 4px solid var(--orange);
+  border-radius: 6px;
+  display: block;
+  margin: 0 0 20px;
+  background: #ded2c4;
+}
+
+.stop-photo.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #8a7a68;
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+
+.stop-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 0 20px;
+}
+
+.stop-photos .stop-photo.gallery {
+  margin: 0;
+}
+
+.stop-photo.placeholder code {
+  font-size: 11px;
+  background: rgba(0,0,0,0.06);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.listen-block {
+  background: var(--white);
+  border: 1px solid #e6dccd;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 0 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.listen-block .listen-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.listen-block .listen-text {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  background: var(--cream);
+  border: 1px solid #e6dccd;
+  border-radius: 999px;
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+
+.audio-player .icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.audio-player .icon[hidden] {
+  display: none;
+}
+
+.player-toggle,
+.player-mute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.player-time {
+  flex: none;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  min-width: 2.1em;
+}
+
+.player-time-duration {
+  text-align: right;
+}
+
+.player-seek {
+  flex: 1;
+  min-width: 40px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  background: #ddd2c2;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+.player-seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: none;
+  cursor: pointer;
+}
+
+.player-seek::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: none;
+  cursor: pointer;
+}
+
+.player-seek::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: #ddd2c2;
+}
+
+.coming-soon {
+  font-size: 13px;
+  color: #8a7a68;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.story-text p {
+  font-size: 16px;
+  margin: 0 0 16px;
+}
+
+.transcript-toggle {
+  background: none;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.stop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.back-link,
+.next-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.next-link {
+  color: var(--orange);
+  margin-left: auto;
+}
+
+footer.trail-footer {
+  text-align: center;
+  padding: 30px 20px 50px;
+  color: #8a7a68;
+  font-size: 12px;
+}
+
+/* --- Index page --- */
+.stop-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.stop-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  border: 1px solid #e6dccd;
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.stop-list .num {
+  font-family: 'Anton', sans-serif;
+  color: var(--orange);
+  font-size: 20px;
+  width: 32px;
+  flex: none;
+}
+
+.stop-list .name {
+  font-weight: 600;
+  font-size: 15px;
+}

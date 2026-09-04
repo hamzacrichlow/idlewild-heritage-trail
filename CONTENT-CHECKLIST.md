@@ -1,0 +1,22 @@
+# Content checklist (internal — not part of the public site)
+
+- [x] **01. The Pomiserania Lodge & Motel** — photo on file; audio linked. _Likely available through Idlewild/Lake County archives; no clearly identified public photograph confirmed yet._
+- [x] **02. Lydia Inn & Castallante Pizza** — photo on file; audio linked. _Historical Lydia Inn imagery is likely available in local collections; current building photos may also be available._
+- [x] **03. Sweetheart Motel** — photo on file; audio linked. _Documented in preservation materials and contemporary records._
+- [x] **04. Holiday House** — photo on file; audio linked. _Present-day photos are findable; historical images may be in local archives._
+- [x] **05. Yates School #3 / Idlewild Public Library / Township Hall** — photo on file; audio linked. _Likely available, especially library and township-related images._
+- [x] **06. Paradise Lake** — photo on file; audio linked. _Both historic and contemporary lake photographs are readily documented._
+- [x] **07. Lake Idlewild** — photo on file; audio linked. _Confirmed — historic and present-day photos available._
+- [x] **08. Morton’s Motel** — photo on file; audio linked. _Confirmed — extensive historic and current images available._
+- [x] **09. Robert H. Riffe Youth Center / ILOA** — photo on file; audio linked. _Documented, including preservation-plan images._
+- [x] **10. The Flamingo** — photo on file; audio linked. _Confirmed — historical photographs and current remains/restoration imagery._
+- [x] **11. Yates School #4 / Township Hall / Festival Grounds** — photo on file; audio linked. _Likely available if the building/site survives or appears in township archives._
+- [x] **12. Hotel Casa Blanca** — photo on file; audio linked. _Confirmed — excellent historic and current restoration photos available._
+- [x] **13. Charles W. Chesnutt Home** — photo on file; audio linked. _Chesnutt family/Idlewild imagery exists._
+- [x] **14. Bayview / Gregory Home** — photo on file; audio linked. _Unknown — likely local archive._
+- [x] **15. Joseph Howard** — photo on file; audio linked. _Unknown — possibly available through Detroit broadcasting or family archives._
+- [x] **16. Tabernacle A.M.E. Church** — photo on file; audio linked. _Confirmed — historical and current images available._
+- [x] **17. LeeJon’s Novelty Shop** — photo on file; audio linked. _Historic/current images should be findable._
+- [x] **18. Carrie Warner / Barbara Johnson Home** — photo on file; audio linked. _Confirmed — a particularly valuable historic image exists._
+- [ ] **19. Black Eden Brews** — NEEDS PHOTO; audio linked. _Confirmed — extensive current imagery available._
+- [x] **20. Rosana’s / Red Rooster / Peyton’s & Idlewild’s Neighborhood Businesses** — photo on file; audio linked. _Confirmed for Rosana/Red Rooster/Peyton’s; earlier names may require local archives._
