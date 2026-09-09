@@ -104,6 +104,15 @@ def link_block(stop):
     )
 
 
+def prev_link_block(prev_stop):
+    if not prev_stop:
+        return ""
+    return (
+        f'<a class="back-link" href="{prev_stop["slug"]}.html">'
+        f'&larr; Previous stop</a>'
+    )
+
+
 def next_link_block(next_stop):
     if not next_stop:
         return ""
@@ -113,7 +122,7 @@ def next_link_block(next_stop):
     )
 
 
-def render_stop(stop, total, template, next_stop=None):
+def render_stop(stop, total, template, prev_stop=None, next_stop=None):
     out = template
     out = out.replace("{{NAME}}", html.escape(stop["name"]))
     out = out.replace("{{NUMBER}}", str(stop["number"]))
@@ -123,6 +132,7 @@ def render_stop(stop, total, template, next_stop=None):
     out = out.replace("{{PHOTO_BLOCK}}", photo_block(stop, from_stop_page=True))
     out = out.replace("{{AUDIO_BLOCK}}", audio_block(stop))
     out = out.replace("{{LINK_BLOCK}}", link_block(stop))
+    out = out.replace("{{PREV_LINK}}", prev_link_block(prev_stop))
     out = out.replace("{{NEXT_LINK}}", next_link_block(next_stop))
     return out
 
@@ -160,8 +170,9 @@ def main():
     index_template = (TEMPLATES / "index_template.html").read_text()
 
     for i, stop in enumerate(stops):
+        prev_stop = stops[i - 1] if i > 0 else None
         next_stop = stops[i + 1] if i + 1 < len(stops) else None
-        page = render_stop(stop, total, stop_template, next_stop)
+        page = render_stop(stop, total, stop_template, prev_stop, next_stop)
         (DOCS / "stops" / f"{stop['slug']}.html").write_text(page)
 
     (DOCS / "index.html").write_text(render_index(stops, index_template))

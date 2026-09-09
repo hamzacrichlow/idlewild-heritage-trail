@@ -33,6 +33,12 @@ a { color: var(--orange); }
   padding: 20px 20px 24px;
 }
 
+.trail-header .logo-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .trail-header .logo-wordmark {
   display: block;
   width: 200px;
@@ -177,6 +183,14 @@ h1.stop-title {
   letter-spacing: 0.5px;
 }
 
+.listen-block .narrator-credit {
+  font-size: 12px;
+  color: #8a7a68;
+  font-style: italic;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
 .audio-player {
   display: flex;
   align-items: center;
@@ -300,6 +314,11 @@ h1.stop-title {
   font-weight: 600;
   text-decoration: none;
   margin: 0 0 16px;
+}
+
+.all-stops-nav {
+  text-align: center;
+  margin-top: 6px;
 }
 
 .stop-nav {
