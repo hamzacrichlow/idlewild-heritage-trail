@@ -149,7 +149,9 @@
     "name": "Black Eden Brews",
     "description": "Black Eden Brews carries Idlewild’s tradition of Black entrepreneurship into the present. Owned and operated by a fourth- and fifth-generation Idlewild family, the coffee bar brings together food, art, gifts and conversation inside historic Morton’s Motel. It is a contemporary gathering place rooted directly in the community’s multigenerational story.",
     "photo_notes": "Confirmed — extensive current imagery available.",
-    "audio_url": "../assets/audio/black-eden-brews.m4a"
+    "audio_url": "../assets/audio/black-eden-brews.m4a",
+    "link_url": "https://www.instagram.com/blackedenbrews.idlewildcoffee/",
+    "link_label": "Follow on Instagram"
   },
   {
     "number": 20,

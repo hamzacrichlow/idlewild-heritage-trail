@@ -289,6 +289,19 @@ h1.stop-title {
   cursor: pointer;
 }
 
+.stop-link-button {
+  display: inline-block;
+  background: none;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 0 16px;
+}
+
 .stop-nav {
   display: flex;
   justify-content: space-between;

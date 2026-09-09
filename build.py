@@ -93,6 +93,17 @@ def audio_block(stop):
 </div>'''
 
 
+def link_block(stop):
+    url = stop.get("link_url", "").strip()
+    if not url:
+        return ""
+    label = html.escape(stop.get("link_label", "Visit Website"))
+    return (
+        f'<a class="stop-link-button" href="{html.escape(url)}" '
+        f'target="_blank" rel="noopener">{label}</a>'
+    )
+
+
 def next_link_block(next_stop):
     if not next_stop:
         return ""
@@ -111,6 +122,7 @@ def render_stop(stop, total, template, next_stop=None):
     out = out.replace("{{DESCRIPTION_PLAIN}}", html.escape(stop["description"][:160]))
     out = out.replace("{{PHOTO_BLOCK}}", photo_block(stop, from_stop_page=True))
     out = out.replace("{{AUDIO_BLOCK}}", audio_block(stop))
+    out = out.replace("{{LINK_BLOCK}}", link_block(stop))
     out = out.replace("{{NEXT_LINK}}", next_link_block(next_stop))
     return out
 
