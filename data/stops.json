@@ -151,7 +151,8 @@
     "photo_notes": "Confirmed — extensive current imagery available.",
     "audio_url": "../assets/audio/black-eden-brews.m4a",
     "link_url": "https://www.instagram.com/blackedenbrews.idlewildcoffee/",
-    "link_label": "Follow on Instagram"
+    "link_label": "Follow on Instagram",
+    "photo_no_crop": true
   },
   {
     "number": 20,

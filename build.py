@@ -60,8 +60,9 @@ def photo_block(stop, from_stop_page=True):
             f'<code>assets/img/stops/{stop["slug"]}.jpg</code></div>'
         )
     if len(photos) == 1:
+        no_crop = " no-crop" if stop.get("photo_no_crop") else ""
         return (
-            f'<img class="stop-photo" src="{prefix}{photos[0]}" '
+            f'<img class="stop-photo{no_crop}" src="{prefix}{photos[0]}" '
             f'alt="{html.escape(stop["name"])}">'
         )
     imgs = "\n".join(

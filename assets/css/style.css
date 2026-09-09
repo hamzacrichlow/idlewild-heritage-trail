@@ -130,6 +130,11 @@ h1.stop-title {
   background: #ded2c4;
 }
 
+.stop-photo.no-crop {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .stop-photo.placeholder {
   display: flex;
   flex-direction: column;

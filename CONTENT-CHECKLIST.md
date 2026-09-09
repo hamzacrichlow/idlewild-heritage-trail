@@ -18,5 +18,5 @@
 - [x] **16. Tabernacle A.M.E. Church** — photo on file; audio linked. _Confirmed — historical and current images available._
 - [x] **17. LeeJon’s Novelty Shop** — photo on file; audio linked. _Historic/current images should be findable._
 - [x] **18. Carrie Warner / Barbara Johnson Home** — photo on file; audio linked. _Confirmed — a particularly valuable historic image exists._
-- [ ] **19. Black Eden Brews** — NEEDS PHOTO; audio linked. _Confirmed — extensive current imagery available._
+- [x] **19. Black Eden Brews** — photo on file; audio linked. _Confirmed — extensive current imagery available._
 - [x] **20. Rosana’s / Red Rooster / Peyton’s & Idlewild’s Neighborhood Businesses** — photo on file; audio linked. _Confirmed for Rosana/Red Rooster/Peyton’s; earlier names may require local archives._
