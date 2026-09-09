@@ -39,33 +39,15 @@ a { color: var(--orange); }
   color: inherit;
 }
 
-.trail-header .logo-wordmark {
+.trail-header .logo-banner-wide {
   display: block;
-  width: 200px;
-  max-width: 62%;
+  width: 100%;
   height: auto;
   margin-bottom: 6px;
 }
 
-.trail-header .logo-subtitle {
-  font-family: 'Anton', sans-serif;
-  letter-spacing: 0.5px;
-  line-height: 1.05;
-  font-size: 27px;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 12px;
-}
-
-.trail-header .logo-subtitle .by-merrell {
-  display: block;
-  width: 110px;
-  height: auto;
-  margin-top: 4px;
-}
-
 .trail-header .tagline {
-  font-size: 13px;
+  font-size: 8px;
   color: #e8d9c8;
   max-width: 60ch;
 }
