@@ -19,7 +19,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--cream);
+  background: var(--white);
   color: var(--ink);
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.55;
@@ -350,12 +350,13 @@ footer.trail-footer {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: var(--white);
+  background: var(--cream);
   border: 1px solid #e6dccd;
   border-radius: 10px;
   padding: 14px 16px;
   text-decoration: none;
   color: var(--ink);
+  box-shadow: 0 2px 5px rgba(55, 56, 54, 0.15);
 }
 
 .stop-list .num {

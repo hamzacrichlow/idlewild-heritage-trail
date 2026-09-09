@@ -114,6 +114,11 @@ def prev_link_block(prev_stop):
     )
 
 
+def description_html(stop):
+    paragraphs = [p.strip() for p in stop["description"].split("\n\n") if p.strip()]
+    return "\n    ".join(f"<p>{html.escape(p)}</p>" for p in paragraphs)
+
+
 def next_link_block(next_stop):
     if not next_stop:
         return ""
@@ -128,7 +133,7 @@ def render_stop(stop, total, template, prev_stop=None, next_stop=None):
     out = out.replace("{{NAME}}", html.escape(stop["name"]))
     out = out.replace("{{NUMBER}}", str(stop["number"]))
     out = out.replace("{{TOTAL}}", str(total))
-    out = out.replace("{{DESCRIPTION_HTML}}", html.escape(stop["description"]))
+    out = out.replace("{{DESCRIPTION_HTML}}", description_html(stop))
     out = out.replace("{{DESCRIPTION_PLAIN}}", html.escape(stop["description"][:160]))
     out = out.replace("{{PHOTO_BLOCK}}", photo_block(stop, from_stop_page=True))
     out = out.replace("{{AUDIO_BLOCK}}", audio_block(stop))
