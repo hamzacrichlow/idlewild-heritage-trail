@@ -359,6 +359,10 @@ footer.trail-footer .footer-copyright {
   line-height: 1.5;
 }
 
+footer.trail-footer .footer-copyright-line {
+  margin-bottom: 6px;
+}
+
 /* --- Index page --- */
 .stop-list {
   list-style: none;
