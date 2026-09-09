@@ -66,6 +66,21 @@ a { color: var(--orange); }
   margin: 0 0 14px;
 }
 
+.about-preview .about-eyebrow {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.about-preview .about-presented-by {
+  font-size: 12px;
+  font-style: italic;
+  color: #8a7a68;
+  margin-bottom: 14px;
+}
+
 .stop-number {
   display: inline-block;
   background: var(--orange);
@@ -335,6 +350,13 @@ footer.trail-footer {
   padding: 30px 20px 50px;
   color: #8a7a68;
   font-size: 12px;
+}
+
+footer.trail-footer .footer-copyright {
+  font-size: 10px;
+  max-width: 60ch;
+  margin: 10px auto 0;
+  line-height: 1.5;
 }
 
 /* --- Index page --- */
