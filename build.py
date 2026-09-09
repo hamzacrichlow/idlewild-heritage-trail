@@ -25,6 +25,7 @@ DATA_FILE = ROOT / "data" / "stops.json"
 TEMPLATES = ROOT / "templates"
 ASSETS_SRC = ROOT / "assets"
 DOCS = ROOT / "docs"
+CNAME_FILE = ROOT / "CNAME"
 
 PHOTO_EXTS = [".jpg", ".jpeg", ".png"]
 
@@ -137,6 +138,11 @@ def main():
 
     # Copy assets as-is
     shutil.copytree(ASSETS_SRC, DOCS / "assets")
+
+    # Custom domain for GitHub Pages — must be re-copied into docs/ on every
+    # build since docs/ gets wiped above (see CNAME file at repo root).
+    if CNAME_FILE.exists():
+        shutil.copy2(CNAME_FILE, DOCS / "CNAME")
 
     stop_template = (TEMPLATES / "stop_template.html").read_text()
     index_template = (TEMPLATES / "index_template.html").read_text()
